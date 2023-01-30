@@ -173,7 +173,7 @@
             let inputLines = modifiedText.split("\n");
             let outputText = "";
             for (let i = 0; i < inputLines.length; i++) {
-                if (i % 2 === 0) {
+                if (i === 0 || i % 3 === 0) {
                     outputText += inputLines[i]
 					.toLowerCase()
 					//.replace(/^(\w+)\s(?:[^\s]+\s)*?(\d[,\d]*)/gm, "$1 $2")
